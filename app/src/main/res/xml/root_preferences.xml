@@ -1,0 +1,37 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory android:title="@string/general_settings">
+
+        <SwitchPreference
+            android:defaultValue="true"
+            app:key="@string/key_keep_screen_on"
+            app:title="@string/keep_screen_on" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/messages_header">
+
+        <ListPreference
+            android:entries="@array/time"
+            android:entryValues="@array/time_values"
+            app:key="@string/key_work_time"
+            app:title="@string/work_time"
+            app:useSimpleSummaryProvider="true" />
+
+        <ListPreference
+            android:entries="@array/time"
+            android:entryValues="@array/time_values"
+            app:key="@string/key_short_break"
+            app:title="@string/short_time"
+            app:useSimpleSummaryProvider="true" />
+
+        <ListPreference
+            android:entries="@array/time"
+            android:entryValues="@array/time_values"
+            app:key="@string/key_long_break"
+            app:title="@string/long_time"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+</PreferenceScreen>

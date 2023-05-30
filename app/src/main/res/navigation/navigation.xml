@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/timerFragment">
+
+    <fragment
+        android:id="@+id/timerFragment"
+        android:name="com.example.pomodoroapp.timer.TimerFragment"
+        android:label="TimerFragment" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.pomodoroapp.setting.SettingsFragment"
+        android:label="SettingsFragment" />
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.example.pomodoroapp.about.AboutFragment"
+        android:label="fragment_about"
+        tools:layout="@layout/fragment_about" />
+    <activity
+        android:id="@+id/splashScreenActivity"
+        android:name="com.example.pomodoroapp.splashscreen.SplashScreenActivity"
+        android:label="activity_splash_screen"
+        tools:layout="@layout/activity_splash_screen" />
+</navigation>
